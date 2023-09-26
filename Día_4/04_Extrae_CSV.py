@@ -1,0 +1,5 @@
+from rsgislib import rastergis   
+clumpsImage = 'grid_100m.kea'
+fields = ['klass','klass__1','klass__2','b1Min', 'b1Max', 'b1Mean', 'b1StdDev', 'b1Sum', 'b2Min', 'b2Max', 'b2Mean', 'b2StdDev', 'b2Sum', 'b3Min', 'b3Max', 'b3Mean', 'b3StdDev', 'b3Sum', 'b4Min', 'b4Max', 'b4Mean', 'b4StdDev', 'b4Sum', 'b5Min', 'b5Max', 'b5Mean', 'b5StdDev', 'b5Sum', 'b6Min', 'b6Max', 'b6Mean', 'b6StdDev', 'b6Sum', 'b7Min', 'b7Max', 'b7Mean', 'b7StdDev', 'b7Sum', 'b8Min', 'b8Max', 'b8Mean', 'b8StdDev', 'b8Sum', 'b9Min', 'b9Max', 'b9Mean', 'b9StdDev', 'b9Sum', 'b10Min', 'b10Max', 'b10Mean', 'b10StdDev', 'b10Sum', 'b11Min', 'b11Max', 'b11Mean', 'b11StdDev', 'b11Sum', 'b12Min', 'b12Max', 'b12Mean', 'b12StdDev']      
+outfile ='features_sentinel_urbano.csv'  
+rastergis.export_rat_cols_to_ascii(clumpsImage, outfile, fields) 
